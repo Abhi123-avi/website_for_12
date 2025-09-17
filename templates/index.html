@@ -8,84 +8,74 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        #abhi-img {
-            height: 560px;
-            width: 100%;
+        body {
+            background: url("/static/abhi.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            /* dark overlay for readability */
+            padding: 20px;
+            border-radius: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="p-3 mb-2 bg-black text-white">
-        <div class="container">
+    <div class="p-3 mb-2">
+        <div class="container overlay">
             <h1 class="text-center mt-2 mb-4">LPU Careers</h1>
-            <img class="img-fluid" id="abhi-img" src="/static/abhi.jpg">
+
             <h2 class="text-center mt-2 mb-4">About LPU</h2>
-            <div>
-                <p class="lead">
-                    LPU (Lovely Professional University) is famous for its massive campus, extensive infrastructure, and
-                    large
-                    student body, which includes international students.
-                    It's particularly known for its programs in Engineering and Business/MBA, offering
-                    industry-integrated
-                    courses
-                    and strong placement support from major companies.
-                    The university is also recognized for its focus on research, innovation, and fostering an
-                    entrepreneurial
-                    environment with unique facilities like high-tech labs
-                    and student-run ventures
-                </p>
-                <h2 class="text-center mt-2 mb-4">Admission</h2>
-                <p class="lead">
-                    Admission to Lovely Professional University (LPU) is primarily based on the LPU NEST (National
-                    Entrance
-                    and
-                    Scholarship Test) for most undergraduate programs.
-                    For postgraduate courses, admissions may be based on merit or specific entrance exams depending on
-                    the
-                    program.
-                    LPU also offers direct admission options for certain
-                    courses based on academic performance in previous qualifications. The university provides various
-                    scholarships
-                    and financial aid options to support students.
-                </p>
-                <h2 class="text-center mt-2 mb-4">Courses</h2>
-                <p class="lead">
-                    LPU offers a wide range of courses across various disciplines including Engineering, Management,
-                    Law,
-                    Design,
-                    Arts, Sciences, and more. The university provides undergraduate, postgraduate,
-                    and doctoral programs. Notable courses include B.Tech, MBA, BBA, LLB, and various specialized
-                    programs
-                    in
-                    emerging fields. LPU emphasizes industry-relevant curricula, practical learning, and research
-                    opportunities
-                    to
-                    prepare students for the job market.
-                </p>
-                <h2 class="text-center mt-2 mb-4">Placements</h2>
-                <p class="lead">
-                    LPU has a strong placement record with numerous national and international companies recruiting from
-                    the
-                    campus.
-                    The university's dedicated placement cell works to connect students with potential employers through
-                    job
-                    fairs,
-                    campus interviews, and industry collaborations.
-                    LPU's focus on skill development, internships, and industry-oriented training helps enhance
-                    students'
-                    employability. Top recruiters include companies from IT, engineering, finance, and other sectors,
-                    offering
-                    competitive salary packages and diverse job roles.
-                </p>
-            </div>
+            <p class="lead">
+                LPU (Lovely Professional University) is famous for its massive campus, extensive infrastructure, and
+                large student body, which includes international students.
+                It's particularly known for its programs in Engineering and Business/MBA, offering industry-integrated
+                courses and strong placement support from major companies.
+                The university is also recognized for its focus on research, innovation, and fostering an
+                entrepreneurial
+                environment with unique facilities like high-tech labs and student-run ventures
+            </p>
+
+            <h2 class="text-center mt-2 mb-4">Admission</h2>
+            <p class="lead">
+                Admission to Lovely Professional University (LPU) is primarily based on the LPU NEST (National Entrance
+                and Scholarship Test) for most undergraduate programs.
+                For postgraduate courses, admissions may be based on merit or specific entrance exams depending on the
+                program. LPU also offers direct admission options for certain courses based on academic performance in
+                previous qualifications. The university provides various scholarships and financial aid options to
+                support students.
+            </p>
+
+            <h2 class="text-center mt-2 mb-4">Courses</h2>
+            <p class="lead">
+                LPU offers a wide range of courses across various disciplines including Engineering, Management, Law,
+                Design, Arts, Sciences, and more. The university provides undergraduate, postgraduate,
+                and doctoral programs. Notable courses include B.Tech, MBA, BBA, LLB, and various specialized programs
+                in
+                emerging fields. LPU emphasizes industry-relevant curricula, practical learning, and research
+                opportunities to prepare students for the job market.
+            </p>
+
+            <h2 class="text-center mt-2 mb-4">Placements</h2>
+            <p class="lead">
+                LPU has a strong placement record with numerous national and international companies recruiting from the
+                campus. The university's dedicated placement cell works to connect students with potential employers
+                through job fairs, campus interviews, and industry collaborations.
+                LPU's focus on skill development, internships, and industry-oriented training helps enhance students'
+                employability. Top recruiters include companies from IT, engineering, finance, and other sectors,
+                offering competitive salary packages and diverse job roles.
+            </p>
         </div>
-        <div class="text-center">
+
+        <!-- Next button and copyright outside overlay -->
+        <div class="text-center mt-4">
             <a href="{{ url_for('next_page') }}" class="btn btn-primary btn-lg">Next</a>
             <p class="mt-4"> CopyRight 2025, Abhinav kumar</p>
         </div>
+    </div>
 </body>
-
-</html>
 
 </html>
